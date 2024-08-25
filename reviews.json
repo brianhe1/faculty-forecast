@@ -1,0 +1,124 @@
+{
+    "reviews": [
+        {
+        "professorName": "Dr. Sarah Johnson",
+        "course": "Introduction to Psychology",
+        "rating": 4,
+        "review": "Dr. Johnson is very knowledgeable and makes the class engaging. Her examples are relatable and help in understanding complex concepts."
+        },
+        {
+        "professorName": "Prof. Michael Chen",
+        "course": "Advanced Calculus",
+        "rating": 5,
+        "review": "Professor Chen is exceptional! His explanations are clear, and he's always willing to help during office hours. Challenging but rewarding course."
+        },
+        {
+        "professorName": "Dr. Emily Rodriguez",
+        "course": "World History",
+        "rating": 3,
+        "review": "The course content is interesting, but Dr. Rodriguez's lectures can be a bit dry. More interactive elements would improve the class."
+        },
+        {
+        "professorName": "Prof. David Thompson",
+        "course": "Organic Chemistry",
+        "rating": 4,
+        "review": "Tough course, but Prof. Thompson makes it manageable. His practice problems are especially helpful for exam preparation."
+        },
+        {
+        "professorName": "Dr. Lisa Patel",
+        "course": "Introduction to Sociology",
+        "rating": 5,
+        "review": "Dr. Patel is passionate about the subject and it shows. Her classes are thought-provoking and encourage critical thinking."
+        },
+        {
+        "professorName": "Prof. Robert Wilson",
+        "course": "Macroeconomics",
+        "rating": 2,
+        "review": "The course material is important, but Prof. Wilson's teaching style is confusing. Often leaves students more puzzled than enlightened."
+        },
+        {
+        "professorName": "Dr. Jennifer Lee",
+        "course": "Molecular Biology",
+        "rating": 4,
+        "review": "Dr. Lee is very knowledgeable and provides great real-world applications. The lab work is particularly informative."
+        },
+        {
+        "professorName": "Prof. Thomas Brown",
+        "course": "Classical Literature",
+        "rating": 3,
+        "review": "Prof. Brown clearly knows his stuff, but his lectures can be long-winded. The reading list is excellent though."
+        },
+        {
+        "professorName": "Dr. Olivia Martinez",
+        "course": "Environmental Science",
+        "rating": 5,
+        "review": "Dr. Martinez is inspirational! Her passion for the environment is contagious, and she organizes great field trips."
+        },
+        {
+        "professorName": "Prof. Andrew Kim",
+        "course": "Linear Algebra",
+        "rating": 4,
+        "review": "Prof. Kim explains complex concepts clearly. His problem sets are challenging but greatly improve understanding."
+        },
+        {
+        "professorName": "Dr. Rachel Green",
+        "course": "Abnormal Psychology",
+        "rating": 5,
+        "review": "Dr. Green brings the subject to life with case studies and guest speakers. One of the best courses I've taken."
+        },
+        {
+        "professorName": "Prof. James Clark",
+        "course": "American Literature",
+        "rating": 2,
+        "review": "The course readings are interesting, but Prof. Clark's lectures lack enthusiasm. More class discussions would be beneficial."
+        },
+        {
+        "professorName": "Dr. Maria Sanchez",
+        "course": "Quantum Physics",
+        "rating": 4,
+        "review": "Dr. Sanchez tackles this difficult subject with clarity. Her problem-solving approach is particularly helpful."
+        },
+        {
+        "professorName": "Prof. William Taylor",
+        "course": "Marketing Principles",
+        "rating": 3,
+        "review": "Prof. Taylor has good industry insights, but the course structure could be improved. More practical projects would be useful."
+        },
+        {
+        "professorName": "Dr. Karen White",
+        "course": "Human Anatomy",
+        "rating": 5,
+        "review": "Dr. White's teaching methods are excellent. The lab sessions are particularly informative and well-organized."
+        },
+        {
+        "professorName": "Prof. Daniel Lee",
+        "course": "International Relations",
+        "rating": 4,
+        "review": "Prof. Lee brings a wealth of experience to the class. His lectures are engaging and provide great insights into global politics."
+        },
+        {
+        "professorName": "Dr. Sophia Anderson",
+        "course": "Organic Chemistry",
+        "rating": 2,
+        "review": "Dr. Anderson seems knowledgeable, but her explanations are often confusing. More practice problems would be helpful."
+        },
+        {
+        "professorName": "Prof. Christopher Moore",
+        "course": "Computer Science Fundamentals",
+        "rating": 5,
+        "review": "Prof. Moore is an outstanding teacher. His coding examples and projects are practical and really enhance learning."
+        },
+        {
+        "professorName": "Dr. Elizabeth Turner",
+        "course": "Art History",
+        "rating": 3,
+        "review": "Dr. Turner is passionate about art, but her lectures can be overwhelming. More visual aids would improve the class experience."
+        },
+        {
+        "professorName": "Prof. Jeffrey Adams",
+        "course": "Business Ethics",
+        "rating": 4,
+        "review": "Prof. Adams facilitates great class discussions on complex ethical issues. The case studies are particularly thought-provoking."
+        }
+    ]
+}

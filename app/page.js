@@ -1,16 +1,28 @@
 "use client";
 import { Box, Button, Stack, TextField } from "@mui/material";
-import { useState } from "react";
+import { yellow, grey } from '@mui/material/colors';
+import SendIcon from "@mui/icons-material/Send";
+import ReactMarkdown from 'react-markdown';
+import { useState, useRef, useEffect } from "react";
+import "./globals.css"
 
 export default function Home() {
   const [messages, setMessages] = useState([
     {
       role: "model",
       content:
-        "Hello! I am the Rate My Professor support assistant. How can I assist you today?",
+        "Hi there! 👋 I'm your personal support assistant, ready to help you find the perfect professor that meets your needs. How can I assist you today?",
     },
   ]);
   const [message, setMessage] = useState("");
+
+  const chatContainerRef = useRef(null); // reference to chat container
+
+  useEffect(() => {
+    if (chatContainerRef.current) {
+      chatContainerRef.current.scrollTop = chatContainerRef.current.scrollHeight;
+    }
+  }, [messages]); // scroll to bottom when messages change
 
   const sendMessage = async () => {
     // clear message input textfield
@@ -84,24 +96,31 @@ export default function Home() {
       width="100vw"
       height="100vh"
       display="flex"
+      padding={1}
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
     >
+      {/* message chat container */}
       <Stack
         direction={"column"}
-        width="500px"
-        height="700px"
-        border="1px solid black"
+        width="90vw"
+        maxWidth={600}
+        height="70vh"
+        border="1px solid gray"
+        borderRadius={5}
+        spacing={2}
         p={2}
-        spacing={3}
+        display="flex"
       >
+        {/* each message bubble */}
         <Stack
           direction={"column"}
-          spacing={2}
+          spacing={1.25}
           flexGrow={1}
           overflow="auto"
-          maxHeight="100%"
+          maxHeight="100vh"
+          ref={chatContainerRef} // assign the ref here
         >
           {messages.map((message, index) => (
             <Box
@@ -113,25 +132,68 @@ export default function Home() {
             >
               <Box
                 bgcolor={
-                  message.role === "model" ? "primary.main" : "secondary.main"
+                  message.role === "model" ? grey[900] : "#304ffe"
                 }
                 color="white"
-                borderRadius={16}
-                p={3}
+                borderRadius={5}
+                maxWidth="80%"
+                overflow="auto"
+                minHeight="35px"
+                pt={1.25}
+                pb={1.25}
+                pl={2}
+                pr={2}
               >
-                {message.content}
+                <ReactMarkdown className="markdown-content">{message.content}</ReactMarkdown>
               </Box>
             </Box>
           ))}
         </Stack>
-        <Stack direction={"row"} spacing={2}>
+        <Stack direction={"row"} spacing={2} height="40px">
           <TextField
             label="Message"
+            size="small"
             fullWidth
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter' && !e.shiftKey) {
+                e.preventDefault();
+                sendMessage();
+              }
+            }}
+            InputProps={{
+              sx: {
+                borderRadius: "50px",
+                '&:hover .MuiOutlinedInput-notchedOutline': {
+                  borderColor: "#304ffe", // color when hovered
+                },
+                '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                  borderColor: "#304ffe", // color when focused
+                },
+              },
+            }}
+            InputLabelProps={{
+              sx: {
+                '&.Mui-focused': {
+                  color: "#304ffe", // label color when focused
+                },
+              },
+            }}
           />
-          <Button variant="contained" onClick={sendMessage}>
+          <Button 
+            variant="contained" 
+            onClick={sendMessage} 
+            sx={{
+              borderRadius: "50px", 
+              padding: "0px 25px", 
+              bgcolor: "#304ffe", 
+              '&:hover': {
+                bgcolor: "#304ffe", // color change on hover
+              }
+            }}
+            endIcon={<SendIcon />}
+          >
             Send
           </Button>
         </Stack>

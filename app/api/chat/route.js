@@ -98,9 +98,7 @@ export async function POST(req) {
                 },
             ],
         });
-
-        console.log("hello i reached this part 1 !!!")
-
+        
         // create a readable stream from the chat response
         const stream = new ReadableStream({
             async start(controller) {
@@ -118,8 +116,6 @@ export async function POST(req) {
                 }
             }
         });
-
-        console.log("hello i reached this part 2 !!!")
 
         return new NextResponse(stream) 
     } catch (error) {

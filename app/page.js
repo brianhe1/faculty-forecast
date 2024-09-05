@@ -62,11 +62,11 @@ export default function Home() {
 
             {/* hero/landing page container */}
             <Box
-                sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center" }}
+                sx={{ display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "center"}}
                 height="100vh"
                 >
                 <Box
-                    sx={{ flex: 1, display: "flex", flexDirection: "column", alignItems: 'flex-start', justifyContent: 'center', px: 5 }}
+                    sx={{ flex: 0.75, display: "flex", flexDirection: "column", justifyContent: 'center', pl: 5 }}
                 >
                     <Stack direction="column" spacing={3}>
                         <Button
@@ -103,17 +103,53 @@ export default function Home() {
                     </Stack>
                 </Box>
                 <Box
-                    sx={{ flex: 1, display: "flex", alignItems: 'center', justifyContent: 'center', p: 2 }}
+                    sx={{ flex: 1.25, display: "flex", justifyContent: "flex-end", alignItems: "flex-end",  objectFit: 'contain' }}
                 >
                     <Box
                     component="img"
-                    src="/images/logo.png"
+                    src="/images/landingpage.png"
                     alt="Logo"
-                    sx={{ height: "auto", width: "80%", maxWidth: "400px", borderRadius: "3px" }}
+                    sx={{ height: "100vh", width: "auto", alignSelf: 'flex-end' }}
                     />
                 </Box>
             </Box>
 
+            {/* problem section */}
+            <Box
+                display="flex" flexDirection="row" justifyContent="center" alignItems="center"
+                sx={{ backgroundColor: grey[900], px: 5}}
+                height="100vh"
+                >
+                <Box
+                sx={{ position: "absolute", top: "110vh", left: 0, flex: 1, display: "flex", justifyContent: "flex-end", alignItems: "flex-end",  objectFit: 'contain' }}
+                >
+                    <Box
+                    component="img"
+                    src="/images/problem1.png"
+                    alt="Logo"
+                    sx={{ height: "90vh", width: "auto", objectFit: 'cover'  }}
+                    />
+                </Box>
+                <Box display="flex" flexDirection="column" justifyContent="center" alignItems="flex-start" sx={{maxWidth: "875px", zIndex: 2 }}>
+
+                    <Typography variant="h3" sx={{ color: "#ffffff", fontWeight: "bold"}} gutterBottom>
+                        76% of Students Struggle to Find the{' '}
+                        <span style={{ color: "#c3deff" }}>Right Professor*</span>
+                    </Typography>
+                    <Typography variant="h6" sx={{ color: "#ffffff"}} gutterBottom>According to recent surveys, most students report difficulty selecting professors due to overwhelming or unclear reviews.</Typography>
+                    <Typography sx={{ fontSize: "12px", color: grey[400]}}>*fake statistic 😂</Typography>
+                </Box>
+                <Box
+                sx={{ position: "absolute", top: "110vh", right: 0, flex: 1, display: "flex", justifyContent: "flex-end", alignItems: "flex-end",  objectFit: 'contain' }}
+                >
+                    <Box
+                    component="img"
+                    src="/images/problem2.png"
+                    alt="Logo"
+                    sx={{ height: "90vh", width: "auto", objectFit: 'cover'  }}
+                    />
+                </Box>
+            </Box>
         </Box>
     </ThemeProvider>
     )

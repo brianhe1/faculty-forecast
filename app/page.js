@@ -189,9 +189,9 @@ export default function Home() {
                                         </Typography>
                                         <Box
                                             component="img"
-                                            src="/images/landingpage.png"
+                                            src="/images/solution1.png"
                                             alt="Logo"
-                                            sx={{ height: "auto", width: "400px"}}
+                                            sx={{ height: "auto", width: "100%"}}
                                         />
                                     </Box>
                                 </Stack>
@@ -211,9 +211,9 @@ export default function Home() {
                                         </Typography>
                                         <Box
                                             component="img"
-                                            src="/images/landingpage.png"
+                                            src="/images/solution2.png"
                                             alt="Logo"
-                                            sx={{ height: "auto", width: "400px"}}
+                                            sx={{ height: "auto", width: "100%"}}
                                         />
                                     </Box>
                                 </Stack>
@@ -233,9 +233,9 @@ export default function Home() {
                                         </Typography>
                                         <Box
                                             component="img"
-                                            src="/images/landingpage.png"
+                                            src="/images/solution3.png"
                                             alt="Logo"
-                                            sx={{ height: "auto", width: "400px"}}
+                                            sx={{ height: "auto", width: "100%"}}
                                         />
                                     </Box>
                                 </Stack>

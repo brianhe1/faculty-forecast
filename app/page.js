@@ -1,6 +1,6 @@
 'use client'
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import { AppBar, Toolbar, Typography, Button, IconButton, Box, Grid, Stack, Paper, Card, CardContent, CardActions, List, ListItem, ListItemText} from "@mui/material";
+import { AppBar, Toolbar, Typography, Button, IconButton, Box, Grid, Stack, Divider} from "@mui/material";
 import Head from "next/head";
 import EastIcon from '@mui/icons-material/East';
 import { grey, teal, blue, cyan, green, orange, pink, indigo, lightBlue} from '@mui/material/colors';
@@ -137,7 +137,7 @@ export default function Home() {
                         <span style={{ color: "#c3deff" }}>Right Professor*</span>
                     </Typography>
                     <Typography variant="h6" sx={{ color: "#ffffff"}} gutterBottom>According to recent surveys, most students report difficulty selecting professors due to overwhelming or unclear reviews.</Typography>
-                    <Typography sx={{ fontSize: "12px", color: grey[400]}}>*fake statistic 😂</Typography>
+                    <Typography sx={{ fontSize: "12px", color: grey[400]}}>*Disclaimer: fake statistic 😂</Typography>
                 </Box>
                 <Box
                 sx={{ position: "absolute", top: "110vh", right: 0, flex: 1, display: "flex", justifyContent: "flex-end", alignItems: "flex-end",  objectFit: 'contain' }}
@@ -149,6 +149,129 @@ export default function Home() {
                     sx={{ height: "90vh", width: "auto", objectFit: 'cover'  }}
                     />
                 </Box>
+            </Box>
+
+            {/* solution section */}
+            <Box sx={{ backgroundColor: grey[900], display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+            {/* Centered Divider */}
+                <Divider
+                    sx={{
+                    borderColor: grey[700],
+                    borderBottomWidth: 1,
+                    width: "95vw"
+                    }}
+                />
+            </Box>
+            <Box
+                display="flex" flexDirection="column" justifyContent="center" alignItems="center"
+                sx={{ backgroundColor: grey[900], py: 10, px: 6}}
+                >
+                    <Stack direction="column" display="flex" flexDirection="column" justifyContent="center" alignItems="center">
+                        <Typography variant="h6" sx={{ color: "#c3deff", fontWeight: "bold"}} gutterBottom>THE SOLUTION</Typography>
+                        <Typography variant="h3" sx={{ color: "#ffffff", fontWeight: "bold", mb: 6}}>
+                            Offering personalized support that every student deserves.
+                        </Typography>
+                    </Stack>
+                    <Box width="95%">
+                        <Grid container spacing={2}>
+                            <Grid item md={4}>
+                                <Stack direction="column" spacing={2}>
+                                    <Button
+                                        variant="outlined"
+                                        sx={{ fontSize: '20px', borderRadius: "8px", bgcolor: grey[800], color: "#ffffff", maxWidth: "300px"}}
+                                        >
+                                        Choose Your University
+                                    </Button>
+                                    <Box sx={{bgcolor: grey[800], borderRadius: "8px", p: 4, minHeight: "700px"}}>
+                                        <Typography variant="h3" sx={{ color: "#ffffff", fontWeight: "bold"}} gutterBottom>Over 100+ Universities</Typography>
+                                        <Typography variant="h5" sx={{ color: grey[400], mb: 6}}>
+                                            Data collected from Rate My Professors. If your university is listed, we can assist you.
+                                        </Typography>
+                                        <Box
+                                            component="img"
+                                            src="/images/landingpage.png"
+                                            alt="Logo"
+                                            sx={{ height: "auto", width: "400px"}}
+                                        />
+                                    </Box>
+                                </Stack>
+                            </Grid>
+                            <Grid item md={4}>
+                                <Stack direction="column" spacing={2}>
+                                    <Button
+                                        variant="outlined"
+                                        sx={{ fontSize: '20px', borderRadius: "8px", bgcolor: grey[800], color: "#ffffff", maxWidth: "240px"}}
+                                        >
+                                        Submit your Query
+                                    </Button>
+                                    <Box sx={{bgcolor: grey[800], borderRadius: "8px", p: 4, minHeight: "700px"}}>
+                                        <Typography variant="h3" sx={{ color: "#ffffff", fontWeight: "bold"}} gutterBottom>Personalized Support</Typography>
+                                        <Typography variant="h5" sx={{ color: grey[400], mb: 6}}>
+                                            Our AI can assist you with professor ratings, lecture styles, pop quizzes, and more.
+                                        </Typography>
+                                        <Box
+                                            component="img"
+                                            src="/images/landingpage.png"
+                                            alt="Logo"
+                                            sx={{ height: "auto", width: "400px"}}
+                                        />
+                                    </Box>
+                                </Stack>
+                            </Grid>
+                            <Grid item md={4}>
+                                <Stack direction="column" spacing={2}>
+                                    <Button
+                                        variant="outlined"
+                                        sx={{ fontSize: '20px', borderRadius: "8px", bgcolor: grey[800], color: "#ffffff", maxWidth: "190px"}}
+                                        >
+                                        Get Response
+                                    </Button>
+                                    <Box sx={{bgcolor: grey[800], borderRadius: "8px", p: 4, minHeight: "700px"}}>
+                                        <Typography variant="h3" sx={{ color: "#ffffff", fontWeight: "bold"}} gutterBottom>Fast Response Times</Typography>
+                                        <Typography variant="h5" sx={{ color: grey[400], mb: 6}}>
+                                            Our support AI uses a database to provide the most up-to-date and relevant responses.
+                                        </Typography>
+                                        <Box
+                                            component="img"
+                                            src="/images/landingpage.png"
+                                            alt="Logo"
+                                            sx={{ height: "auto", width: "400px"}}
+                                        />
+                                    </Box>
+                                </Stack>
+                            </Grid>
+                        </Grid>
+                    </Box>
+            </Box>
+
+            {/* cta section */}
+            <Box
+                display="flex" flexDirection="column" justifyContent="center" alignItems="center"
+                sx={{ p: 5,  margin: "0 auto" }}
+                minHeight="25vh"
+                maxWidth="1000px"
+                
+                >
+                <Typography textAlign="center" variant="h3" sx={{ color: "#000000", fontWeight: "bold", mb: 3}}>
+                    Start off your new semester right. <br/> Start with FacultyForecast.
+                </Typography>
+                <Stack direction="row" spacing={2}>
+                    <Button
+                    variant="outlined"
+                    href="/demo"
+                    sx={{ fontSize: '20px', textTransform: 'none', borderRadius: "8px", px: 3 }}
+                    >
+                    Try demo
+                    </Button>
+                    <Button
+                    variant="contained"
+                    color="secondary"
+                    href="#"
+                    sx={{ fontSize: '20px', textTransform: 'none', borderRadius: "8px", px: 3 }}
+                    >
+                    Start Chat
+                    </Button>
+                </Stack>
             </Box>
         </Box>
     </ThemeProvider>

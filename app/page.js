@@ -27,7 +27,7 @@ export default function Home() {
     <ThemeProvider theme={theme}>
         <Box maxWidth="100vw" sx={{ backgroundColor: theme.palette.background.default}}>
             <Head>
-                <link rel="icon" href="/public/images/logo.png" type="image/png"/>
+                <link rel="icon" href="/images/logo.png" type="image/png"/>
                 <title>FacultyForecast</title>
                 <meta name = "description" content = 'Get AI support on choosing the best professor!'/>
             </Head>

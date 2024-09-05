@@ -44,7 +44,7 @@ export default function Home() {
                     {/* Center the second Stack */}
                     <Box sx={{ display: 'flex', justifyContent: 'center', flex: 1 }}>
                         <Stack direction="row" spacing={1}>
-                        <Button href="#" sx={{ fontSize: '16px', textTransform: 'none'}}>Home</Button>
+                        <Button href="#" color="secondary" sx={{ fontSize: '16px', textTransform: 'none'}}>Home</Button>
                         <Button href="#" sx={{ fontSize: '16px', textTransform: 'none'}}>Features</Button>
                         <Button href="#" sx={{ fontSize: '16px', textTransform: 'none' }}>About Us</Button>  
                         </Stack>
